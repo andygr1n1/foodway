@@ -1,0 +1,21 @@
+---
+import '../styles/index.scss'
+import Navigation from '../components/navigation/Navigation.astro'
+
+interface IProps {
+    title: string
+}
+
+const { title = 'Foowday' } = Astro.props as IProps
+---
+
+<meta charset='utf-8' />
+<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+<meta name='viewport' content='width=device-width' />
+<meta name='generator' content={Astro.generator} />
+<title>{title}</title>
+
+<body class='flex bg-yellow-400 h-full w-full'>
+    <Navigation />
+    <div class='module-wrapper'><slot /></div>
+</body>

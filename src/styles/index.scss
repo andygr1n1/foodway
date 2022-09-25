@@ -1,0 +1,35 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+html,
+body {
+    @apply h-full w-full font-sans;
+}
+
+body {
+    @apply flex;
+}
+
+.module-wrapper {
+    @apply bg-gray-200 w-full p-[2%];
+}
+
+ul {
+    @apply list-none m-0 p-0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply m-0 p-0;
+}
+
+a,
+a:focus,
+a:active,
+a:visited {
+    @apply no-underline;
+}

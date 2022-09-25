@@ -1,0 +1,23 @@
+---
+import { navRoutes } from './navroutes'
+---
+
+<ul>
+    {
+        navRoutes.map((route) => (
+            <li>
+                <a href={`/${route.path}`}>{route.title}</a>
+            </li>
+        ))
+    }
+</ul>
+
+<style lang='scss'>
+    ul {
+        @apply bg-blue-500 flex flex-col w-[250px] min-w-[250px] gap-10 py-10 px-5;
+
+        a {
+            @apply text-white font-bold;
+        }
+    }
+</style>
